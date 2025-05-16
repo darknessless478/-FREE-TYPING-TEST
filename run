@@ -1,0 +1,5 @@
+const quotes = [
+  "Typing is an essential skill in the digital age. Practicing every day improves your accuracy and speed significantly.",
+  "The quick brown fox jumps over the lazy dog. This sentence uses every letter of the alphabet.",
+  "Learning to type without looking at the keyboard is called touch typing. It makes you faster over time."
+];
