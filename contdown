@@ -1,0 +1,23 @@
+function startTest() {
+  currentQuote = getRandomQuote();
+  quoteDisplay.textContent = currentQuote;
+  quoteInput.value = "";
+  quoteInput.disabled = false;
+  quoteInput.focus();
+  startTime = new Date();
+  clearInterval(timerInterval);
+  let timeLeft = 60;
+  timer.textContent = timeLeft;
+
+  timerInterval = setInterval(() => {
+    timeLeft--;
+    timer.textContent = timeLeft;
+
+    if (timeLeft <= 0) {
+      clearInterval(timerInterval);
+      quoteInput.disabled = true;
+    } else {
+      updateStats();
+    }
+  }, 1000);
+}
