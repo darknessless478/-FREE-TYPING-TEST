@@ -1,0 +1,17 @@
+/* Add in CSS */
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+button {
+  margin-top: 20px;
+}
+
+/* Add in HTML */
+<button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+/* Add in JS */
+function toggleDarkMode() {
+  document.body.classList.toggle("dark");
+}
